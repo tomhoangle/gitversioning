@@ -1,2 +1,2 @@
 # gitversioning
-30.0.0
+30.0.1
