@@ -4,7 +4,7 @@ continuous-delivery-fallback-tag: ""
 branches:
   develop:
     increment: Patch
-    is-mainline: true
+    is-mainline: false
     tag: ''
   develop-Run:
     regex: develop-Run
