@@ -22,7 +22,7 @@ pipeline {
                    DOCKER_TAG = "run-" + VERSION_NUMBER
                    echo DOCKER_TAG
                    sh "git tag $DOCKER_TAG"
-                   sh 'git push https://tomhoangle1:$TOM_USER@github.com/tomhoangle/gitversioning.git refs/tags/$DOCKER_TAG'
+                   sh "git push https://tomhoangle1:$TOM_USER@github.com/tomhoangle/gitversioning.git refs/tags/$DOCKER_TAG"
                 }
             }
         }
