@@ -5,13 +5,13 @@ branches:
   develop:
     increment: Patch
     is-mainline: false
-    tag: ''
+    tag: useBranchName
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
     source-branches: ['develop']
-    tag: ''
+    tag: useBranchName
 ignore:
   sha: []
 merge-message-formats: {}
