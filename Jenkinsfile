@@ -19,15 +19,15 @@ pipeline {
                         script: 'docker run --rm -v "$WORKSPACE:/repo" gittools/gitversion:5.3.5-linux-alpine.3.10-x64-netcoreapp3.1 /repo /showvariable MajorMinorPatch',
                         returnStdout: true
                         ).trim()
-                   if($BRANCH_NAME == "develop_Dragon")
+                   if(BRANCH_NAME == "develop_Dragon")
                     {
                         DOCKER_TAG = "Dragon-" + VERSION_NUMBER
                     }
-                    else if($BRANCH_NAME == "develop_Tiger")
+                    else if(BRANCH_NAME == "develop_Tiger")
                     {
                         DOCKER_TAG = "Tiger-" + VERSION_NUMBER
                     }
-                    if($BRANCH_NAME == "develop")
+                    if(BRANCH_NAME == "develop")
                     {
                         DOCKER_TAG = VERSION_NUMBER
                     }
