@@ -1,7 +1,7 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: ContinuousDeployment
 continuous-delivery-fallback-tag: ""
-tag-prefix: '^(run-|walk-)'
+tag-prefix: '^(Dragon-|Tiger-)'
 branches:
   develop:
     mode: ContinuousDeployment
