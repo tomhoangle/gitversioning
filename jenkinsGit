@@ -1,3 +1,4 @@
 
-def matcher = FULL_NUMBER =~ /(?<=.-)(
+def matcher = FUBER =~ /(?<=.-)(\d{1,3
+
 
