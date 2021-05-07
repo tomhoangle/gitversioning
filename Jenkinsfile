@@ -7,7 +7,7 @@ pipeline {
         DOCKER_TAG = ""
         TOM_USER = credentials('gittom')
         REPO_ADDRESS = ""
-        
+        BRANCH_NAME = "${GIT_BRANCH.split("/")[1]}"
     }
     stages {
         stage('git tag') {
