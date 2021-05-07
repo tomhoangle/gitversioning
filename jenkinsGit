@@ -1,3 +1,2 @@
 
-def matcher = FULL_MBER =~ /(?<=.-)(
-
+def matcher = FULL_MBER =~ /(?<=.-
