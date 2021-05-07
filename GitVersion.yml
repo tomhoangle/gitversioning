@@ -6,14 +6,14 @@ branches:
   develop:
     mode: ContinuousDeployment
     increment: Patch
-    is-mainline: true
+    is-mainline: false
     tag: ''
     prevent-increment-of-merged-branch-version: true
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
-    source-branches: []
+    source-branches: ['develop']
     prevent-increment-of-merged-branch-version: true
     track-merge-target: true
     tracks-release-branches: true
