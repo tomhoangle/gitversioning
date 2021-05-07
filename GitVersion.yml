@@ -4,15 +4,17 @@ continuous-delivery-fallback-tag: ""
 tag-prefix: '^(run-|walk-)'
 branches:
   develop:
+    mode: ContinuousDeployment
     increment: Patch
     is-mainline: true
     tag: ''
+    prevent-increment-of-merged-branch-version: true
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
     source-branches: []
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: true
     tracks-release-branches: true
     is-release-branch: false
