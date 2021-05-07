@@ -1,16 +1,23 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: ContinuousDeployment
 continuous-delivery-fallback-tag: ""
+tag-prefix: '^(run-|walk-)'
 branches:
   develop:
+    mode: ContinuousDeployment
     increment: Patch
     is-mainline: false
     tag: ''
+    prevent-increment-of-merged-branch-version: true
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
     source-branches: ['develop']
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: true
+    tracks-release-branches: true
+    is-release-branch: false
     tag: ''
 ignore:
   sha: []
