@@ -9,15 +9,19 @@ branches:
     is-mainline: false
     tag: ''
     prevent-increment-of-merged-branch-version: true
-  develop-Run:
-    regex: develop-Run
+  develop_Dragon:
+    regex: develop_Dragon
     mode: ContinuousDeployment
     increment: Patch
-    source-branches: ['develop']
+    source-branches: []
     prevent-increment-of-merged-branch-version: true
-    track-merge-target: true
-    tracks-release-branches: true
-    is-release-branch: false
+    tag: ''
+  develop_Tiger:
+    regex: develop_Tiger
+    mode: ContinuousDeployment
+    increment: Patch
+    source-branches: []
+    prevent-increment-of-merged-branch-version: true
     tag: ''
 ignore:
   sha: []
