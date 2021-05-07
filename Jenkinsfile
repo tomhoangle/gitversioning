@@ -20,7 +20,7 @@ pipeline {
                         returnStdout: true
                         ).trim()
 
-                   DOCKER_TAG = VERSION_NUMBER
+                   DOCKER_TAG = "Dragon-" + VERSION_NUMBER
                    echo DOCKER_TAG
                    sh "git tag $DOCKER_TAG"
                    sh "git push https://tomhoangle1:$TOM_USER@github.com/tomhoangle/gitversioning.git refs/tags/$DOCKER_TAG"
